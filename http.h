@@ -38,6 +38,7 @@ typedef struct
 	int status;
 	int fd;
 	char *local_if;
+	char proxy_auth[MAX_STRING];
 } http_t;
 
 int http_connect( http_t *conn, int proto, char *proxy, char *host, int port, char *user, char *pass );
